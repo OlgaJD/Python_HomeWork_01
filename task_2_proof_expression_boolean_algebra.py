@@ -21,10 +21,10 @@ def proof_expression():
             for z in range(2):
                 first_statement = not (x or y or z)
                 second_statement = not (x) and not (y) and not(z)
-                print(f'Для предикат, принимающих значения: {x}, {y}, {z}')
+                print(f'Для предикат, принимающих значения: {x}, {y}, {z}', end = ' - ')
                 if first_statement == second_statement:
-                    print('Утверждение верно')
+                    print('утверждение верно')
                 else:
-                    print('Утверждение неверно')
+                    print('утверждение неверно')
 
 proof_expression()
